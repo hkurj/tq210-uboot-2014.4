@@ -195,6 +195,9 @@ VENDOR=
 #########################################################################
 
 # set default to nothing for native builds
+# add by hkurj
+CROSS_COMPILE ?= arm-linux-
+# add end
 ifeq ($(HOSTARCH),$(ARCH))
 CROSS_COMPILE ?=
 endif
